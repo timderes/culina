@@ -21,23 +21,21 @@ import "../styles/scrollbar.css";
 import { Gabriela, Noto_Sans } from "next/font/google";
 
 /*
- * Custom color palette based on the "Algal Fuel" color (#20bf6b)
- * The palette was generated using the Mantine color generator tool
+ * The palette was generated using the Mantine color generator tool.
  *
- * @see https://flatuicolors.com/palette/de
- * @see https://mantine.dev/colors-generator/?color=20bf6b
+ * @see https://mantine.dev/colors-generator/?color=6B31B2
  */
-const culinaGreen: MantineColorsTuple = [
-  "#e6fef2",
-  "#d4f9e5",
-  "#aaf1cb",
-  "#7ce9af",
-  "#57e297",
-  "#3fdd88",
-  "#30dc80",
-  "#21c26d",
-  "#12ad5f",
-  "#00964f",
+const culinaColors: MantineColorsTuple = [
+  "#f6eeff",
+  "#e7d9f7",
+  "#cab1ea",
+  "#ad86dd",
+  "#9462d2",
+  "#854bcb",
+  "#7d3fc9",
+  "#6b31b2",
+  "#5f2ba0",
+  "#52238d",
 ];
 
 const headingFont = Gabriela({
@@ -51,9 +49,9 @@ const textFont = Noto_Sans({
 });
 
 const theme = createTheme({
-  primaryColor: "culinaGreen",
+  primaryColor: "culinaColors",
   colors: {
-    culinaGreen,
+    culinaColors,
   },
   headings: {
     fontFamily: headingFont.style.fontFamily,

@@ -4,7 +4,7 @@ import type { Profile } from "types/profile";
 import { useTranslation } from "next-i18next";
 
 type HeaderGreetingProps = BoxComponentProps & {
-  firstName: Profile["name"]["firstName"] | undefined;
+  firstName: Profile["firstName"] | undefined;
 };
 
 const HeaderGreeting = ({ firstName, ...props }: HeaderGreetingProps) => {

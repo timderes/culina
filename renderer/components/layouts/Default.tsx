@@ -1,6 +1,7 @@
 import {
   ActionIcon,
   AppShell,
+  Avatar,
   Container,
   Divider,
   Flex,
@@ -10,13 +11,7 @@ import {
   Text,
   Tooltip,
 } from "@mantine/core";
-import {
-  upperFirst,
-  useDisclosure,
-  useFullscreen,
-  useNetwork,
-  useOs,
-} from "@mantine/hooks";
+import { useDisclosure, useFullscreen } from "@mantine/hooks";
 import {
   IconMenu2,
   IconMinus,
@@ -26,7 +21,7 @@ import {
 } from "@tabler/icons-react";
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
-import { APP_NAME, APP_VERSION } from "utils/constants";
+import { APP_NAME } from "utils/constants";
 import navbarRoutes from "utils/content/navbarRoutes";
 import sendIPC from "utils/ipc/send";
 import formatLocalizedRoute from "utils/navigation/formatLocalizedRoute";
@@ -46,9 +41,6 @@ const DefaultLayout = ({
   const { toggle: toggleFullscreen, fullscreen } = useFullscreen();
   const [isNavbarOpened, { toggle: toggleNavbar }] =
     useDisclosure(withNavbarOpen);
-  const CLIENT_OS = useOs();
-  const { online: NETWORK_STATUS } = useNetwork();
-
   const router = useRouter();
 
   const {
@@ -174,20 +166,9 @@ const DefaultLayout = ({
         </AppShell.Section>
         <Divider />
         <AppShell.Section p="lg">
-          <Text c="dimmed" ta="center">
-            <Text component="span" fz="xs" display="block">
-              {APP_VERSION}
-            </Text>
-            <Text component="span" fz="xs" display="block">
-              {upperFirst(CLIENT_OS)}
-            </Text>
-            <Text component="span" fz="xs" display="block">
-              {t("networkStatus.text")}:{" "}
-              {NETWORK_STATUS
-                ? t("networkStatus.online")
-                : t("networkStatus.offline")}
-            </Text>
-          </Text>
+          <Avatar color="indigo" mx="auto">
+            DU
+          </Avatar>
         </AppShell.Section>
       </AppShell.Navbar>
       <AppShell.Main>

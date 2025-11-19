@@ -2,7 +2,7 @@
   "private": true,
   "name": "culina",
   "productName": "Culina",
-  "description": "Analyze, track and compare your dart games.",
+  "description": "Manage recipes and plan your kitchen with Culina.",
   "version": "0.2.1",
   "author": "Culina Contributors",
   "main": "app/background.js",

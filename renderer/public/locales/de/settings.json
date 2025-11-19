@@ -23,14 +23,14 @@
   },
   "storage": {
     "title": "Speicherplatz",
-    "text": "Löschen Sie Profile und gespeicherte Spieldaten, um Speicherplatz freizugeben.",
+    "text": "Löschen Sie Profile und gespeicherte Daten, um Speicherplatz freizugeben.",
     "dangerZoneTitle": "Achtung!",
     "dangerZoneText": "Änderungen in diesem Bereich können nicht rückgängig gemacht werden!",
     "dangerZone": {
       "btn": {
         "label": {
           "deleteAllProfiles": "Alle Profile löschen",
-          "deleteAllMatches": "Alle Spiele löschen",
+          "deleteAllRecipes": "Alle Rezepte löschen",
           "resetApp": "App zurücksetzen"
         }
       }

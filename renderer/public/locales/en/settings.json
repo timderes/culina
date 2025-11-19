@@ -23,14 +23,14 @@
   },
   "storage": {
     "title": "Storage",
-    "text": "Delete profiles and saved game data to free up storage space.",
+    "text": "Delete profiles and saved app data to free up storage space.",
     "dangerZoneTitle": "Warning!",
     "dangerZoneText": "Changes in this area cannot be undone!",
     "dangerZone": {
       "btn": {
         "label": {
           "deleteAllProfiles": "Delete All Profiles",
-          "deleteAllMatches": "Delete All Matches",
+          "deleteAllRecipes": "Delete All Recipes",
           "resetApp": "Reset App"
         }
       }

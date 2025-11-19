@@ -29,9 +29,8 @@ import sendIPC from "utils/ipc/send";
 import formatLocalizedRoute from "utils/navigation/formatLocalizedRoute";
 
 type DefaultLayoutProps = {
-  children: React.ReactNode;
   withNavbarOpen: boolean;
-};
+} & React.PropsWithChildren;
 
 export const headerHeight = 50; // px
 export const navbarWidth = 200; // px

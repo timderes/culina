@@ -1,8 +1,6 @@
-import type { PropsWithChildren } from "react";
-
 import { Text, type TextProps } from "@mantine/core";
 
-type DarkenedTextProps = TextProps & PropsWithChildren;
+type DarkenedTextProps = TextProps & React.PropsWithChildren;
 
 const DarkenedText = ({ children, ...props }: DarkenedTextProps) => {
   return (

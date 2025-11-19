@@ -14,13 +14,12 @@ import {
   IconSquaresDiagonal,
 } from "@tabler/icons-react";
 import { useTranslation } from "next-i18next";
+import React from "react";
 
 import { APP_NAME } from "utils/constants";
 import sendIPC from "utils/ipc/send";
 
-type OnlyControlsLayoutProps = {
-  children: React.ReactNode;
-};
+type OnlyControlsLayoutProps = React.PropsWithChildren;
 
 export const headerHeightOnlyControls = 50; // px
 

@@ -11,9 +11,8 @@ import { useRouter } from "next/router";
 import getDefaultIconSize from "utils/misc/getDefaultIconSize";
 
 type SettingsLayoutProps = {
-  children: React.ReactNode;
   route: string;
-};
+} & React.PropsWithChildren;
 
 type SettingsLink = {
   activeRoute: string;

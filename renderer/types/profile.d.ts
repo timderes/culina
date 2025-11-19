@@ -1,22 +1,13 @@
 import type { DefaultMantineColor } from "@mantine/core";
 
+/**
+ * A user profile in the application.
+ */
 declare type Profile = {
-  avatarImage?: string;
-  bio: string;
-  color: DefaultMantineColor;
-  createdAt: number;
-  isGuestProfile?: boolean;
-  name: {
-    firstName: string;
-    lastName: string;
-  };
-  username: string;
-  updatedAt: number;
-  uuid: string;
-  // badges?: {
-  //  isDeveloper: boolean;
-  //  isAlphaUser: boolean;
-  //  isBetaUser: boolean;
-  //  isProUser: boolean;
-  // };
+  color: DefaultMantineColor; // Color used for the fallback avatar
+  firstName: string;
+  lastName: string;
+  uuid: string; // UUID v4 string
+  createdAt: number; // UNIX Timestamp
+  updatedAt: number; // UNIX Timestamp
 };

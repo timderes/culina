@@ -57,9 +57,9 @@ const SettingsPage = () => {
             <Text>{t("settings:profile.text")}</Text>
             <Group>
               <Stack gap={0}>
-                <Text>{getFormattedName(defaultProfile.name)}</Text>
+                <Text>{getFormattedName(defaultProfile)}</Text>
                 <Text fz="xs" c="dimmed">
-                  {defaultProfile.username}{" "}
+                  {defaultProfile.firstName}
                 </Text>
               </Stack>
             </Group>

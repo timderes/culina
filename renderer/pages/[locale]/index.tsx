@@ -10,7 +10,7 @@ const IndexPage = () => {
   return (
     <DefaultLayout withNavbarOpen>
       <Stack my="lg">
-        <HeaderGreeting firstName={defaultProfile?.name.firstName || ""} />
+        <HeaderGreeting firstName={defaultProfile?.firstName || ""} />
       </Stack>
     </DefaultLayout>
   );

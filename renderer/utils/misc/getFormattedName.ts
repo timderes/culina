@@ -1,5 +1,3 @@
-import type { Profile } from "types/profile";
-
 /**
  * Constructs the formatted full name from a Profile object.
  * @param {Profile} profile - The profile object containing firstName and lastName properties.

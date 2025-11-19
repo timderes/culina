@@ -1,5 +1,18 @@
 {
   "welcomeTitle": "The world of recipes awaits - welcome to {{APP_NAME}}!",
   "welcomeText": "Discover delicious recipes, create your personal collections, and plan meals to your taste. Enjoy cooking!",
-  "welcomeButtonCTA": "Start {{APP_NAME}}"
+  "welcomeButtonCTA": "Start {{APP_NAME}}",
+  "createProfileTitle": "Create your profile",
+  "createProfileText": "{{APP_NAME}} stores your recipes and settings in a personal profile. Let's create your profile to get started!",
+  "profileDetailsTitle": "Profile",
+  "formLabels": {
+    "color": "Color",
+    "firstName": "First Name",
+    "lastName": "Last Name"
+  },
+  "createProfileCTA": "Create Profile",
+  "colorHelpText": "This color will be used for your avatar if you don't have a profile picture.",
+  "formErrors": {
+    "fieldIsEmpty": "The field \"{{FIELD_NAME}}\" cannot be empty."
+  }
 }

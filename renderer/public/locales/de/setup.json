@@ -1,5 +1,18 @@
 {
   "welcomeTitle": "Die Welt der Rezepte wartet - willkommen bei {{APP_NAME}}!",
   "welcomeText": "Entdecke köstliche Rezepte, erstelle deine persönlichen Sammlungen und plane Mahlzeiten ganz nach deinem Geschmack. Viel Spaß beim Kochen!",
-  "welcomeButtonCTA": "{{APP_NAME}} starten"
+  "welcomeButtonCTA": "{{APP_NAME}} starten",
+  "createProfileTitle": "Erstelle dein Profil",
+  "createProfileText": "{{APP_NAME}} speichert deine Rezepte und Einstellungen in einem persönlichen Profil. Lass uns dein Profil erstellen, um loszulegen!",
+  "profileDetailsTitle": "Profil",
+  "formLabels": {
+    "color": "Farbe",
+    "firstName": "Vorname",
+    "lastName": "Nachname"
+  },
+  "createProfileCTA": "Profil erstellen",
+  "colorHelpText": "Diese Farbe wird für deinen Avatar verwendet, wenn du kein Profilbild hast.",
+  "formErrors": {
+    "fieldIsEmpty": "Das Feld \"{{FIELD_NAME}}\" darf nicht leer sein."
+  }
 }

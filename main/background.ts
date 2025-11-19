@@ -51,8 +51,8 @@ void (async () => {
 
   const port = process.argv[2];
   const welcomeRoute = isProd
-    ? `app://./${locale}/`
-    : `http://localhost:${port}/${locale}/`;
+    ? `app://./${locale}/welcome`
+    : `http://localhost:${port}/${locale}/welcome`;
 
   if (!defaultProfile) {
     // Default profile is undefined, load url to create a new profile

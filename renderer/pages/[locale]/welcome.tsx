@@ -32,14 +32,14 @@ const WelcomePage: NextPage = () => {
     return (
       <Center h={pageHeight} p="xl" maw={800}>
         <Stack>
-          <Title>{t("setup:welcomeTitle", { APP_NAME: APP_NAME })}</Title>
-          <Text opacity={0.8}>
-            {t("setup:welcomeText", { APP_NAME: APP_NAME })}
-          </Text>
+          <Title>{t("setup:welcomeTitle", { APP_NAME })}</Title>
+          <Text opacity={0.8}>{t("setup:welcomeText", { APP_NAME })}</Text>
           <Divider mt="lg" />
           <Group>
-            <Button onClick={() => void router.push(`/${locale}/`)}>
-              {t("setup:welcomeButtonCTA", { APP_NAME: APP_NAME })}
+            <Button
+              onClick={() => void router.push(`/${locale}/setup-profile`)}
+            >
+              {t("setup:welcomeButtonCTA", { APP_NAME })}
             </Button>
             <Button variant="default" onClick={() => sendIPC("close-app")}>
               {t("closeApp")}

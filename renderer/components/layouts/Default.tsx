@@ -6,6 +6,7 @@ import {
   Divider,
   Flex,
   Group,
+  Menu,
   NavLink,
   ScrollAreaAutosize,
   Text,
@@ -15,6 +16,7 @@ import { useDisclosure, useFullscreen } from "@mantine/hooks";
 import {
   IconMenu2,
   IconMinus,
+  IconSettings,
   IconSquare,
   IconSquareX,
   IconSquaresDiagonal,
@@ -166,9 +168,28 @@ const DefaultLayout = ({
         </AppShell.Section>
         <Divider />
         <AppShell.Section p="lg">
-          <Avatar color="indigo" mx="auto">
-            DU
-          </Avatar>
+          <Menu withArrow position="right">
+            <Menu.Target>
+              <Avatar color="indigo" mx="auto">
+                DU
+              </Avatar>
+            </Menu.Target>
+            <Menu.Dropdown>
+              <Menu.Item
+                leftSection={<IconSettings size={14} />}
+                onClick={() =>
+                  void router.push(
+                    formatLocalizedRoute({
+                      locale,
+                      route: "/settings",
+                    })
+                  )
+                }
+              >
+                Settings
+              </Menu.Item>
+            </Menu.Dropdown>
+          </Menu>
         </AppShell.Section>
       </AppShell.Navbar>
       <AppShell.Main>
